@@ -33,5 +33,31 @@ let undefinedValue = Number(undefinedNumber)
 
 let someNumber = 33
 let stringNumber = String(someNumber)
-console.log(someNumber)
-console.log(typeof(stringNumber))
+// console.log(someNumber)
+// console.log(typeof(stringNumber))
+
+// ***************************** Operations *******************************
+
+let value = 3
+let negValue = -value
+// console.log(negValue)
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**2)       // 2 to the power 2
+// console.log(2**3)       // 2 to the power 3
+// console.log(2/3)
+// console.log(2%3)
+
+let str1 = "Hello"
+let str2 = " Suman"
+
+let str3 = str1 + str2;
+console.log(str3);      // Hello Suman
+
+// console.log("1" + 2);   // 12
+// console.log(1 + "2");   // 12
+// console.log("1" + 2 + 2);// 122
+// console.log(1 + 2 + "2");// 32
+
