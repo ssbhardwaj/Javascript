@@ -33,3 +33,37 @@ console.log(id === anotherId);      // result => false.
             }
 
             console.log(typeof myFunction);     // "function"
+
+
+
+
+// *************************************** Memories ************************************
+
+// Two types of memory => i). Stack memory(Primitive data types)    ii). Heap memory(Non-Primitive data types)
+// Whenever stack memory is begin used, we will get a copy of the decleared variable.
+// When heap is used (object decleared in heap), we always get a reference of the original value..
+
+// Example of Static
+
+let myYoutubename = "hiteshchoudharydotcom"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+// Both different as we just got the copy
+
+// Example of Heap
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Suman@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+// Both same as both point to the same object in the memory.
