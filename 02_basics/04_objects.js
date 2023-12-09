@@ -46,12 +46,34 @@ const users = [
 ]
 // console.log(users[1].id)
 
-console.log(tinderUser);
-// To get all keys in an object
-console.log(Object.keys(tinderUser))         //Return type array -> all keys are returned in an array
-// To get all values in an object
-console.log(Object.values(tinderUser))      //Return type array -> all values are returned in an array
-// key value ko array m convert karega
-console.log(Object.entries(tinderUser))
-//Check karna ho ki ye property hain ki nahi obj k pass
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))        // True
+// console.log(tinderUser);
+// // To get all keys in an object
+// console.log(Object.keys(tinderUser))         //Return type array -> all keys are returned in an array
+// // To get all values in an object
+// console.log(Object.values(tinderUser))      //Return type array -> all values are returned in an array
+// // key value ko array m convert karega
+// console.log(Object.entries(tinderUser))
+// //Check karna ho ki ye property hain ki nahi obj k pass
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))        // True
+
+
+// ************************************* Objects Destructuring *********************************************
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course;
+// console.log(courseInstructor)
+console.log(instructor)
+
+// JSON
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
